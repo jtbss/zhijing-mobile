@@ -51,6 +51,10 @@ module.exports = {
                 use: {
                     loader: "url-loader"
                 }
+            },
+            {
+                test: /\.scss$/,
+                use: [ "style-loader", "css-loader", "sass-loader" ]
             }
         ]
     },

@@ -18,6 +18,28 @@
                 </li>
             </ul>
         </div>
+
+        <div class="news">
+            <h3>新闻动态</h3>
+            <span></span>
+
+            <div class="newsList">
+                <ul>
+                    <li v-for="news in newsList" :key="news.id">
+                        <img v-lazy="news.img">
+                        <p>{{news.title}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="company-intro">
+            <h3>关于我们</h3>
+            <span></span>
+            <div>
+                <p>深圳市嘀哒知经科技有限责任公司创立于2017年，目前公司位于深圳市福田保税区。作为一家新兴、新鲜、新潮的互联网公司，在这个知识经济时代里，团队站在了时代的浪尖上，致力于开发出人人可出售“自己”、出售知识的平台，它就是【知经】APP，一个链接世界，让知识与经验从此不再孤独！在这里可以与各行业大咖畅所欲言，谈笑间完成知识的学习，与【知经】一起进入知识经济时代！</p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -32,6 +54,14 @@ export default {
                 { id: 3, img: require('../images/ap3.jpg') },
                 { id: 4, img: require('../images/ap4.jpg') },
                 { id: 5, img: require('../images/ap5.jpg') },
+            ],
+            newsList : [
+                { id: 1, title: '知经引发知识经济爆发性增长', img: require('../images/newspic1.jpg') },
+                { id: 2, title: '知经获得2.5亿美金估值', img: require('../images/newspic2.jpg') },
+                { id: 3, title: '接纳新变化-知识经济时代新人类生活指南', img: require('../images/newspic3.jpg') },
+                { id: 4, title: '大学生创业引流新渠道知经', img: require('../images/newspic4.jpg') },
+                { id: 5, title: '新兴跨国企业知经科技专访', img: require('../images/newspic5.jpg') },
+                { id: 6, title: '探索未来，新的赛道如何评判', img: require('../images/newspic6.jpg') }
             ]
         }
     },
@@ -41,32 +71,114 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+    .company-intro{
+        background-image: url('../images/about-us.jpg');
+        background-position: center;
+        padding: 20px;
+        h3{
+            margin: 0;
+            text-align: center;
+            padding: 10px;
+        }
+        span{
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: #34af80;
+            margin: 10px auto;
+        }
+        div{
+            width: 8rem;
+            margin: 0 auto;
+            background: rgba(80,80,80,0.7);
+            border-radius: 10px;
+            p{
+                padding: 20px;
+                margin: 0;
+                text-align: justify;
+                color: #fff;
+            }
+        }
+    }
+
     .app-pic img{
         width: 100%;
         display: block
     }
 
-    .app-intro h3{
-        margin: 10px auto;
-        text-align: center;
-        color: #606260
+    .newsList {
+        ul {
+            // background: #606260;
+            width: 7rem;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            li {
+                border-radius: 4px;
+                background: #fff;
+                margin-bottom: 20px;
+                &:nth-child(6){
+                    margin-bottom: 0;
+                }
+                img {
+                    width: 100%;
+                    display: block;
+                }
+                p{
+                    margin: 0;
+                    text-align: center;
+                    padding: 10px;
+                    font-size: 0.4rem;
+                    font-weight: bold;
+                    color: #606260;
+                }
+            }
+        }
     }
-    .app-intro p{
-        margin: 10px;
-        text-align: left;
-        color: #606260;
-        text-align: justify
+
+    .news {
+        width: 100%;
+        background: #f6f6f6;
+        padding-top: 10px;
+        h3 {
+            margin: 0;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #606260;
+        }
+        span {
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: #38b1f0;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
     }
-    .app-intro span{
-        display: block;
-        width: 50px;
-        height: 2px;
-        background: #34af80;
-        margin: 0 auto;
+
+    .app-intro {
+        h3 {
+            margin: 10px;
+            text-align: center;
+            color: #606260;
+        }
+        p {
+            margin: 20px;
+            text-align: left;
+            color: #606260;
+            text-align: justify;
+        }
+        span {
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: #34af80;
+            margin: 0 auto;
+        }
     }
+
     .mint-swipe{
-        height: 160px;
+        height: 4.27rem;
     }
     .mint-swipe img{
         width: 100%;

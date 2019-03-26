@@ -12,12 +12,12 @@
         <transition>
             <div class="navBar" v-if="flag">
                 <ul>
-                    <li><router-link to="/home">首页</router-link></li>
-                    <li><router-link to="/service">服务案例</router-link></li>
-                    <li><router-link to="/news">新闻报道</router-link></li>
-                    <li><router-link to="/company">公司简介</router-link></li>
-                    <li><router-link to="/joinus">加入我们</router-link></li>
-                    <li><router-link to="/login">登录注册</router-link></li>
+                    <router-link to="/home" tag="li">首页</router-link>
+                    <router-link to="/service" tag="li">服务案例</router-link>
+                    <router-link to="/news" tag="li">新闻报道</router-link>
+                    <router-link to="/company" tag="li">公司简介</router-link>
+                    <router-link to="/joinus" tag="li">加入我们</router-link>
+                    <router-link to="/login" tag="li">登录注册</router-link>
                 </ul>
             </div>
         </transition>
@@ -44,13 +44,6 @@ export default {
 </script>
 
 <style scoped>
-    a{
-        color: #606260;
-        text-decoration: none;
-        display: inline-block;
-        width: 100%;
-    }
-
     #logo{
         width: 45px;
         position: absolute;
@@ -85,7 +78,8 @@ export default {
         line-height: 30px;
         padding: 5px 0;
         padding-left: 10px;
-        color: #606260
+        color: #606260;
+        font-size: 18px;
     }
     .navBar ul li:hover{
         background: #c3c3c4

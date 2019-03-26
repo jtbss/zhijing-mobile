@@ -15,8 +15,17 @@ body{
     padding: 0;
     /* padding-top: 40px; */
 }
+html{
+    font-size: 37.5px;
+}
 ul,li{
     margin: 0;
     padding: 0;
     list-style: none
+}
+h3{
+    font-size: 0.5rem
+}
+p{
+    font-size: 0.4rem
 }

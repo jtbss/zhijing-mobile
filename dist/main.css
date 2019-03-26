@@ -2229,18 +2229,21 @@ body{
     padding: 0;
     /* padding-top: 40px; */
 }
+html{
+    font-size: 37.5px;
+}
 ul,li{
     margin: 0;
     padding: 0;
     list-style: none
 }
-
-a[data-v-53bda4af]{
-    color: #606260;
-    text-decoration: none;
-    display: inline-block;
-    width: 100%;
+h3{
+    font-size: 0.5rem
 }
+p{
+    font-size: 0.4rem
+}
+
 #logo[data-v-53bda4af]{
     width: 45px;
     position: absolute;
@@ -2278,7 +2281,8 @@ a[data-v-53bda4af]{
     line-height: 30px;
     padding: 5px 0;
     padding-left: 10px;
-    color: #606260
+    color: #606260;
+    font-size: 18px;
 }
 .navBar ul li[data-v-53bda4af]:hover{
     background: #c3c3c4
@@ -2323,28 +2327,5 @@ body > .el-container[data-v-3ee336e7] {
 }
 .el-container:nth-child(7) .el-aside[data-v-3ee336e7] {
   line-height: 320px;
-}
-
-
-.app-pic img[data-v-a6d97536]{
-    width: 100%;
-    display: block
-}
-.app-intro h3[data-v-a6d97536]{
-    margin: 10px auto;
-    text-align: center;
-    color: #606260
-}
-.app-intro p[data-v-a6d97536]{
-    margin: 10px;
-    text-align: left;
-    color: #606260
-}
-.mint-swipe[data-v-a6d97536]{
-    height: 160px;
-}
-.mint-swipe img[data-v-a6d97536]{
-    width: 100%;
-    display: block;
 }
 
