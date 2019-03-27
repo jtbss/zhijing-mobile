@@ -1,5 +1,6 @@
 <template>
     <div>
+        <div class="blank"></div>
         <mt-swipe :show-indicators="false">
             <mt-swipe-item><img src="../images/carousel1.jpg" alt=""></mt-swipe-item>
             <mt-swipe-item><img src="../images/carousel2.jpg" alt=""></mt-swipe-item>
@@ -47,7 +48,6 @@
 export default {
     data(){
         return {
-            // imge: require('../images/ap1.jpg'),
             list: [
                 { id: 1, img: require('../images/ap1.jpg') },
                 { id: 2, img: require('../images/ap2.jpg') },
@@ -66,20 +66,25 @@ export default {
         }
     },
     created() {
-        
+        console.log('Welcome comt to Weclick!')
     },
 }
 </script>
 
 <style scoped lang="scss">
+    p{
+        font-size: 0.4rem;
+    }
+
     .company-intro{
         background-image: url('../images/about-us.jpg');
-        background-position: center;
-        padding: 20px;
+        background-size: cover;
+        padding: 20px 20px 40px 20px;
         h3{
             margin: 0;
             text-align: center;
             padding: 10px;
+            font-size: 0.5rem;
         }
         span{
             display: block;
@@ -114,7 +119,7 @@ export default {
             margin: 0 auto;
             padding-bottom: 20px;
             li {
-                border-radius: 4px;
+                border-radius: 8px;
                 background: #fff;
                 margin-bottom: 20px;
                 &:nth-child(6){
@@ -123,6 +128,8 @@ export default {
                 img {
                     width: 100%;
                     display: block;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
                 }
                 p{
                     margin: 0;
@@ -145,6 +152,7 @@ export default {
             margin-bottom: 10px;
             text-align: center;
             color: #606260;
+            font-size: 0.5rem;
         }
         span {
             display: block;
@@ -161,6 +169,7 @@ export default {
             margin: 10px;
             text-align: center;
             color: #606260;
+            font-size: 0.5rem;
         }
         p {
             margin: 20px;

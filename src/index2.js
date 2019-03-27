@@ -22,11 +22,11 @@ var vm = new Vue({
     router
 })
 
-window.onload = function(){
-    function newRem(){
-        var windowScreenWidth = window.screen.width
-        var html = document.documentElement;
-        html.style.fontSize = windowScreenWidth/10 + 'px'
-    }
-    window.addEventListener('resize', newRem, false)
-}
+// window.onload = function(){
+//     function newRem(){
+//         var windowScreenWidth = window.screen.width
+//         var html = document.documentElement;
+//         html.style.fontSize = windowScreenWidth/10 + 'px'
+//     }
+//     window.addEventListener('resize', newRem, false)
+// }
