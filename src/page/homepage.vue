@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="blank"></div>
+        <!-- <div class="blank"></div> -->
         <mt-swipe :show-indicators="false">
             <mt-swipe-item><img src="../images/carousel1.jpg" alt=""></mt-swipe-item>
             <mt-swipe-item><img src="../images/carousel2.jpg" alt=""></mt-swipe-item>

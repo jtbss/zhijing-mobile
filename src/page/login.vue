@@ -1,6 +1,7 @@
 <template>
     <div>
-        <div class="blank"></div>
+        <!-- <div class="blank"></div> -->
+        arsenal
     </div>
 </template>
 

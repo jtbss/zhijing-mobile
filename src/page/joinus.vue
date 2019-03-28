@@ -1,9 +1,11 @@
 <template>
     <div>
-        <div class="blank"></div>
+        <!-- <div class="blank"></div> -->
         <div class="topBar">
             <img src="../images/joinus.jpg" alt="">
         </div>
+
+
     </div>
 </template>
 

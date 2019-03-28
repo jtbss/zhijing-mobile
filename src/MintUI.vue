@@ -22,8 +22,13 @@
             </div>
         </transition>
 
-        <!-- middle part -->    
-        <router-view></router-view>
+        <!-- middle part -->
+        <div class="app-container">
+            <transition name="main" appear>
+                <router-view></router-view>
+            </transition>
+        </div>
+
 
         
         <!-- foot part -->
@@ -52,6 +57,26 @@ export default {
 </script>
 
 <style scoped lang="scss">
+    // 主视图动画
+    .app-container{
+        overflow-x: hidden;
+    }
+    .main-enter,
+    {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    .main-leave-to{
+        opacity: 0;
+        transform: translateX(-100%);
+        position: absolute;
+    }
+    .main-enter-active,
+    .main-leave-active{
+        transition: all 0.5s ease
+    }
+    //////////////////////
+
     .contact-us{
         background: #333333;
         padding-bottom: 20px;
@@ -94,9 +119,8 @@ export default {
         background: #f8f9fa;
         padding: 10px 0;
         position: relative;
-        position: fixed;
-        z-index: 999;
-        /* border-bottom: 1px solid #A0A3A0 */
+        // position: fixed;
+        // z-index: 999;
     }
     .nav-btn{
         position: absolute;
@@ -105,9 +129,9 @@ export default {
         transform: translateY(-50%);
     }
     .navBar {
-        margin-top: 55px;
-        position: fixed;
-        z-index: 999;
+        // margin-top: 55px;
+        // position: fixed;
+        // z-index: 999;
         width: 100%;
         height: 240px;
         background: #f8f9fa;

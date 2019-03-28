@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="blank"></div>
+        <!-- <div class="blank"></div> -->
         <div class="topBar">
             <img src="../images/service.jpg" alt="">
         </div>

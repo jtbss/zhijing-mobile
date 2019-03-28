@@ -5,10 +5,16 @@ Vue.use(VueRouter)
 // import 'element-ui/lib/theme-chalk/index.css'
 // Vue.use(ElementUI)
 
-import MintUI from 'mint-ui'
+import { Swipe, SwipeItem } from 'mint-ui';
+import { Button } from 'mint-ui';
+import { Lazyload } from 'mint-ui';
+
+Vue.use(Lazyload);
+Vue.component(Button.name, Button);
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
+
 import 'mint-ui/lib/style.css'
-Vue.use(MintUI)
- 
 import './css/style.css'
 
 import MUI from './MintUI.vue'
