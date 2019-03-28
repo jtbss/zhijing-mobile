@@ -120,6 +120,7 @@ export default {
 
     .topBar{
         width: 100%;
+        position: relative;
         img{
             width: 100%;
         }

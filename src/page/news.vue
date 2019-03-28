@@ -2,7 +2,7 @@
     <div>
         <div class="blank"></div>
         <div class="topBar">
-            <img src="../images/news.jpg" alt="">   
+            <img src="../images/news.jpg" alt="">
         </div>
         
         <div class="news-list">
@@ -51,6 +51,10 @@ export default {
             li{
                 padding: 20px 0 0 0;
                 margin: 0 15px;
+                border-bottom: 1px solid #d0d1d0;
+                &:nth-child(8){
+                    border-bottom: none;
+                }
                 .news-content{
                     display: flex;
                     .pic{
@@ -73,6 +77,7 @@ export default {
                             margin: 0;
                             padding: 5px;
                             text-align: justify;
+                            color: #606260;
                         }
                     }
                 }
@@ -82,6 +87,7 @@ export default {
 
     .topBar{
         width: 100%;
+        position: relative;
         img{
             width: 100%;
             display: block;

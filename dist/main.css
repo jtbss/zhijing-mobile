@@ -2212,18 +2212,6 @@ display: inline-block;
 .mintui-success:before { content: "\E602"; }
 .mintui-field-success:before { content: "\E609"; }
 
-/* .flex-tesst{
-    display: flex
-}
-.demoImg{
-    width: 100%;
-}
-.demoImg img{
-    width: 100%;
-}
-h3{
-    color: lightcoral
-} */
 body{
     margin: 0;
     padding: 0;

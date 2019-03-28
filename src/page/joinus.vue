@@ -1,6 +1,9 @@
 <template>
     <div>
-        <h3>joinus</h3>
+        <div class="blank"></div>
+        <div class="topBar">
+            <img src="../images/joinus.jpg" alt="">
+        </div>
     </div>
 </template>
 
@@ -10,6 +13,13 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+    .topBar{
+        width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
 </style>
