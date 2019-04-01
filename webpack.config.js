@@ -24,7 +24,8 @@ module.exports = {
                     {
                         loader: 'url-loader',  //指定使用的loader和loader的配置参数
                         options: {
-                            limit: 500 //把小于500b的文件打成base64格式，写入JS
+                            limit: 500, //把小于500b的文件打成base64格式，写入JS
+                            name: 'images/[hash:8].[name].[ext]'
                         }
                     }
                 ]
