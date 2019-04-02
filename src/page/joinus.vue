@@ -40,11 +40,13 @@
                 </ul>
             </div> -->
         </div>
-
+        <foot-box></foot-box>
     </div>
 </template>
 
 <script>
+import foot from './foot.vue'
+
 export default {
     data(){
         return {
@@ -83,11 +85,11 @@ export default {
     },
     methods: {
         show(id){
-            // console.log(id)
-            // var el = event.currentTarget
-            // console.log(event)
             this.poslist[id-1].view = !this.poslist[id-1].view
         }
+    },
+    components: {
+        'foot-box': foot
     }
 }
 </script>
@@ -157,7 +159,7 @@ export default {
     }
 
 
-//上面为测试样式代码
+    //上面为测试样式代码
 
     .topBar{
         width: 100%;

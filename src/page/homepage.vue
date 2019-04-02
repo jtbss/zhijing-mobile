@@ -41,10 +41,14 @@
                 <p>深圳市嘀哒知经科技有限责任公司创立于2017年，目前公司位于深圳市福田保税区。作为一家新兴、新鲜、新潮的互联网公司，在这个知识经济时代里，团队站在了时代的浪尖上，致力于开发出人人可出售“自己”、出售知识的平台，它就是【知经】APP，一个链接世界，让知识与经验从此不再孤独！在这里可以与各行业大咖畅所欲言，谈笑间完成知识的学习，与【知经】一起进入知识经济时代！</p>
             </div>
         </div>
+
+        <foot-box></foot-box>
     </div>
 </template>
 
 <script>
+import foot from './foot.vue'
+
 export default {
     data(){
         return {
@@ -68,6 +72,9 @@ export default {
     created() {
         console.log('Welcome comt to Weclick!')
     },
+    components: {
+        'foot-box': foot
+    }
 }
 </script>
 

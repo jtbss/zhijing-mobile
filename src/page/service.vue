@@ -26,10 +26,14 @@
                 </ul>
             </div>
         </div>
+
+        <foot-box></foot-box>
     </div>
 </template>
 
 <script>
+import foot from './foot.vue'
+
 export default {
     data(){
         return {
@@ -39,6 +43,9 @@ export default {
                 { id: 3, img: require('../images/lecturer3.jpg'), name: '洪振杰', intro: '从事编程行业10年的高级全栈工程师，精通前端后台各项编程语言及各大主流框架技术。10年来通过博客和各种课程帮助了许多爱好编程的初学者和需要进修的编程高手，哺乳了IT业新生力量的同时也为IT业不断注入新的强大力量。他以自身的学习经历，制作了《PHP高编》、《JavaScript思想》等珍贵的教程。' }
             ]
         }
+    },
+    components: {
+        'foot-box': foot
     }
 }
 </script>

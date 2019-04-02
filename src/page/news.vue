@@ -20,10 +20,13 @@
                 </li>
             </ul>
         </div>
+        <foot-box></foot-box>
     </div>
 </template>
 
 <script>
+import foot from './foot.vue'
+
 export default {
     data(){
         return {
@@ -38,6 +41,9 @@ export default {
                 { id: 8, img: require('../images/newspic5.jpg'), title: '大学生技能变现“在知经我重新思索了学识的意义”', content: '“你好，世界！”全球旅行摄影大赛第一期（2018年5月）征集近5000幅投稿，经本期评委的严格评选审核，最终3幅作品脱颖而出摘得首月“月度最佳奖”，10幅/组作品获得“月度优秀奖”。' },
             ]
         }
+    },
+    components: {
+        'foot-box': foot
     }
 }
 </script>

@@ -20,10 +20,14 @@
                 </ul>
             </div>
         </div>
+
+        <foot-box></foot-box>
     </div>
 </template>
 
 <script>
+import foot from './foot.vue'
+
 export default {
     data(){
         return {
@@ -33,6 +37,9 @@ export default {
                 { id: 3, img: require('../images/intropic3.jpg'), title: '地址/人员概况', intro: '深圳市嘀哒知经科技有限责任公司，坐落于广东深圳，是一家年轻有为的创业公司。' }
             ]
         }
+    },
+    components: {
+        'foot-box': foot
     }
 }
 </script>
