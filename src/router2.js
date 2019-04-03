@@ -6,6 +6,9 @@ import news from './page/news.vue'
 import company from './page/company.vue'
 import joinus from './page/joinus.vue'
 import login from './page/login.vue'
+import account from './page/login/account.vue'
+import phone from './page/login/phone.vue'
+import wechat from './page/login/wechat.vue'
 
 var router = new VueRouter({
     routes: [
@@ -15,7 +18,16 @@ var router = new VueRouter({
         { path: '/news', component: news },
         { path: '/company', component: company },
         { path: '/joinus', component: joinus },
-        { path: '/login', component: login }
+        { 
+            path: '/login', 
+            component: login ,
+            children: [
+                { path: '/', redirect: 'account' },
+                { path: 'account', component: account },
+                { path: 'phone', component: phone },
+                { path: 'wechat', component: wechat }
+            ]
+        }
     ]
 })
 
