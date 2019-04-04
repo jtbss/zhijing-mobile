@@ -84,7 +84,7 @@ export default {
                         p{
                             color: #fff;
                             margin: 0;
-                            font-size: 13px;
+                            font-size: 12.9px;
                         }
                     }
                 }
