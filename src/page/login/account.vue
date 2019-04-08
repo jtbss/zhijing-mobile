@@ -1,15 +1,20 @@
 <template>
     <div class="accountframe">
-        <!-- <i><img src="../../images/user.png" alt=""></i> -->
+        <!-- 使用了flex布局 -->
         <div class="user">
-            <input type="text" placeholder="用户名/手机"> 
-            <input type="password" placeholder="用户名/手机">
+            <input type="text" placeholder="用户名/手机" class="inputframe">
+            <input type="password" placeholder="密码" class="inputframe">
             <div class="wenzi">
-                <p>记住账号</p>
+                <div class="remeber">
+                    <input type="checkbox" name="" id="">
+                    <p>记住账号</p>
+                </div>
                 <p><a href="">忘记密码</a>&nbsp;&nbsp;<a href="">注册账号</a></p>
             </div>
             <button>登录</button>
-        </div> 
+        </div>
+
+        <!-- 不使用flex布局 -->
     </div>
 </template>
 
@@ -27,6 +32,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+    //使用了flex布局
     .accountframe{
         width: 280px;
         height: 160px;
@@ -37,14 +44,18 @@ export default {
             width: 80%;
             height: 100%;
             margin: 0 auto;
-            input{
+            position: relative;
+            margin-top: 5px;
+            .inputframe{
                 background: #fff;
                 color: #999;
                 border: 1px solid #ddd;
-                padding-left: 35px;
+                padding-left: 15px;
                 width: 100%;
                 height: 30px;
                 border-radius: 5px;
+                appearance: none;
+                -webkit-appearance: none;
             }
             .wenzi{
                 padding: 0 5px;
@@ -53,6 +64,19 @@ export default {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                .remeber{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 70px;
+                    input{
+                        border: 1px solid #ddd;
+                        background: #fff;
+                        width: 15px;
+                        height: 15px;
+                        transform: translateY(0.5px);
+                    }
+                }
                 p{
                     color: #999;
                     margin: 0;

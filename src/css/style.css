@@ -15,6 +15,14 @@ ul,li{
     height: 55px;
     background: #fff;
 }
+input{
+    appearance: none;
+}
+input[type=checkbox]:checked:after{
+    content: url(../images/yes.jpg);
+    position: relative;
+    top: -0.5px;
+}
 @media (min-width: 320px){html{font-size: 32px;} }
 @media (min-width: 360px){html{font-size: 36px;} }
 @media (min-width: 375px){html{font-size: 37.5px;} }
