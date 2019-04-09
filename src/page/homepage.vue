@@ -70,7 +70,7 @@ export default {
         }
     },
     created() {
-        console.log('Welcome comt to Weclick!')
+        console.log('Welcome to Weclick!')
     },
     components: {
         'foot-box': foot
